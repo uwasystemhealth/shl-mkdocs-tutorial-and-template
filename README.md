@@ -10,7 +10,7 @@ For full documentation visit:
 ## What do I hope to achieve with this tutorial and template?
 This tutorial and template has 2 main purpose:
 
-1. Make the documentation setup easier and accesible for everyone (template)
+1. Make the documentation setup easier and accessible for everyone (template)
 2. Teach Markdown (tutorial)
 
 ## How easy is this to deploy?
