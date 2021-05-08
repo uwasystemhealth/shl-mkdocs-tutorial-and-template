@@ -7,6 +7,12 @@ For full documentation visit:
 - [PyMdown Extensions](https://facelessuser.github.io/pymdown-extensions/) for the different extensions that are installed
 - [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) for the customisation of the web server documentation.
 
+## What do I hope to achieve with this tutorial and template?
+This tutorial and template has 2 main purpose:
+
+1. Make the documentation setup easier and accesible for everyone (template)
+2. Teach Markdown (tutorial)
+
 ## How easy is this to deploy?
 
 1.  Clone This [Repo](https://github.com/uwasystemhealth/shl-mkdocs-tutorial-and-template) or press the big green button "Use this template"
