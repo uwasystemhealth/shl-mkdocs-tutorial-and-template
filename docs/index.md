@@ -43,3 +43,13 @@ pip install -r requirements.txt
 This template is made to be simple such that it gives you a brief overview of how you would be writing your documentation with a few configuration. This is the type of documentation that you just build on top of.
 
 If in the scenario that you feel that I missed that is essential to be in the template, please feel free to give this repository a pull request. However, if you feel that you would like to extend this template much more, I would highly recommend to visit the original [Mkdocs Material Documentation](https://squidfunk.github.io/mkdocs-material/customization/).
+
+
+## About this tutorial
+
+There are 4 main portion of this tutorial, which are ordered sequentially:
+
+1. Overview and Installation of Mkdocs (the current documentation you are looking at)
+2. Writing Markdown
+3. Flavoured Markdown
+4. Deployment and Automated Deployment

@@ -1,6 +1,8 @@
-# Extensions Installed Overview
+# Flavoured Markdown
 
-This is a VERY VERY small overview to what you can do with this. I will just highlight some of them, because those are the only documentation syntax that I commonly use and usually remember.
+Flavoured markdown is a type of markdown that is customised with different syntax to provide a more stylistic documentationn. As you know, markdown is great for its simplicity, however this also makes it inflexible when making more stylistic documentation such as creating Math formula with Latex and many more feature that you wil see here. With Flavoured Markdown, there are certain syntax to follow on top of the original markdown syntax.
+
+Below is a **very very small** overview to what[Mkdocs Material](https://squidfunk.github.io/mkdocs-material/) - the base extension . I will just highlight some of them, because those are the only documentation syntax that is commonly use and usually remembered.
 
 ## Admonitions
 These are kind of those fancy boxes that you usually in cool Science Books that adds extra information.

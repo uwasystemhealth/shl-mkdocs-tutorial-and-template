@@ -1,10 +1,36 @@
-# Automatic Site Deployment with Github Action
-This is a configuration which allows your documentation from github to auto-deploy to the github pages.
+# Site Deployment
+
+As said previously, Mkdocs allows conversion of `.md` to `HTML`, `CSS`, and `JS` files in order to create and deploy websites. Below are the possible approaches.
+
+## Site Deployment with Github
+Assuming that your repository is in github, when an Mkdocs repository is created, simply type
+
+```bash
+mkdocs gh-deploy
+```
+
+Just follow the prompt, and it will automatically deploy your website in github pages. No other complication needed, this command will handle the following steps:
+
+1. Generation of website files
+2. Deployment with Github Pages
+
+### Custom Domain Name
+
+In the scenario that you like a custom domain name such as https://www.tutorial-mkdocs.systemhealthlab.com , follow this [documentation](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages).
+
+tldr (too long didn't read) instructions:
+1. Go to the domain registar, in my case Cloudflare
+2. Register a "CNAME" of the domain/subdomain going towards `<organisation/githubname>.github.io` (eg. `uwasystemhealth.github.io`)
+3. Add a `CNAME` file with the name of the domain/subdomain in the `/docs` folder
+4. Give the `CNAME` file a content of the subdomain name (eg. `tutorial-mkdocs.systemhealthlab.com`)
+
+### Automatic Site Deployment with Github Action
+This is a configuration which allows your documentation from github to auto-deploy to the github pages. You might not want to run `mkdocs gh-deploy` everytime you have new changes.
 
 ???+ example "Why do I need this?"
     Let me give you an example, for this documentation it is hosted at https://uwasystemhealth.github.io/shl-mkdocs-tutorial-and-template/. If this thing is configured, then whenever you modify the github repository, it automatically redeploys in github pages.
 
-## How do I do this?
+#### How do I do this?
 
 If you look closely in the repository, there is a file `.github/workflows/main.yml`. Copy this file over to you repository. The content of it is roughly like below. Note that you have to change 2 lines highlighted to the path of your documentation. 
 
@@ -86,12 +112,12 @@ jobs:
           publish_dir: ./site
 ```
 
-## Custom Domain Name
+## Custom Site Deployment
 
-In the scenario that you like a custom domain name such as https://www.tutorial-mkdocs.systemhealthlab.com , follow this [documentation](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages).
+Let say you don't want to deploy it in github pages. You would like to deploy it elsewhere such as your own server or a VPS. Be aware that this portion is a little bit technical, and may not even be what you do in a regular basis or not necessary if you already deployed it with Github Pages. You have to type this command
 
-tldr (too long didn't read) instructions:
-1. Go to the domain registar, in my case Cloudflare
-2. Register a "CNAME" of the domain/subdomain going towards `<organisation/githubname>.github.io` (eg. `uwasystemhealth.github.io`)
-3. Add a `CNAME` file with the name of the domain/subdomain in the `/docs` folder
-4. Give the `CNAME` file a content of the subdomain name (eg. `tutorial-mkdocs.systemhealthlab.com`)
+```bash
+mkdocs build
+```
+
+This will create the `/site` folder which contains your website files. Now you would have to setup a server application that serves static files such as `NGINX` or `Apache` server app. After setting this up, copy the contents of the `/site` folder into the static file folder.
