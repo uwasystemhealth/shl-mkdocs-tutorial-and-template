@@ -1,11 +1,11 @@
 # This configuration can be changed from this https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
 # I will be putting comments on certain places where necessary
 
-site_name: MkDocs Frinze Template
-copyright: Copyright Frinze Erin Lapuz 2020
+site_name: System Health Lab Mkdocs Tutorial and Template
+copyright: Copyright System Health Lab 2021
 author: Frinze Erin Lapuz # remove this if you removed the override/partial
 author_website: https://frinzelapuz.vercel.app/ # remove this if you removed the override/partial
-repo_url: https://github.com/frinzekt/mkdocs-frinze-template/
+repo_url: https://github.com/uwasystemhealth/shl-mkdocs-tutorial-and-template/
 
 # This uri refers to the github path to edit, change this if you branch is different in name
 edit_uri: edit/main/docs/
@@ -14,20 +14,20 @@ theme:
   custom_dir: overrides # remove this if you removed the override/partial
   palette:
   - media: "(prefers-color-scheme: light)" # below here is a palette for light mode
-    primary: teal
+    primary: brown
     scheme: default
     toggle:
       icon: material/toggle-switch-off-outline
       name: Switch to dark mode
   - media: "(prefers-color-scheme: dark)"  # below here is a palette for dark mode
-    primary: teal
+    primary: brown
     scheme: slate
     toggle:
       icon: material/toggle-switch
       name: Switch to light mode
 
-  logo: images/docs.png
-  favicon: images/docs.png
+  logo: images/shl.png
+  favicon: images/shl.png
   features: # Refer to https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/
       - navigation.instant
   #   - navigation.tabs
@@ -45,9 +45,9 @@ plugins:
   # - Mermaid Markdown doesn't render at the moment in PDF
   - with-pdf:
       author: Frinze Erin Lapuz
-      cover_title: MkDocs Frinze Template
-      cover_subtitle: Making documentation easier
-      cover_logo: ./docs/images/docs.png
+      cover_title: Mkdocs Tutorial and Template
+      cover_subtitle: Making writing documentations easier!
+      cover_logo: ./docs/images/shl_with_text.png
       enabled_if_env: ENABLE_PDF_EXPORT # This prevents generation of pdf when using `mkdocs serve` because it takes a long time. This will however generate the PDF when the environment variable is setup OR in the github action
 
 # These are markdown extensions I have included that makes the documentation look nicer
@@ -88,21 +88,27 @@ markdown_extensions:
 extra:
   social:
     - icon: octicons/globe-16
-      link: https://frinzelapuz.vercel.app/
-    - icon: fontawesome/brands/github
-      link: https://github.com/frinzekt/
+      link: https://systemhealthlab.com/
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/uwasystemhealth
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/uwasystemhealth/
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/SystemHealthLab/
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UCzrEiyVpb3xix8yYt1m6BNw
     - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/frinze-erin-lapuz/
+      link: https://www.linkedin.com/company/systemhealthlab/
     - icon: fontawesome/solid/paper-plane
-      link: mailto:frinze.lapuz@gmail.com
+      link: mailto:systemhealthlab@gmail.com
 
 
 # Add google Analytics when you need it
 # Remove this if you dont need it
 # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-analytics/
-google_analytics:
-  - UA-162451015-2 
-  - auto
+# google_analytics:
+#   - UA-162451015-2 
+#   - auto
 
 # This is the extra javascript included in the documentation
 extra_javascript:

@@ -1,5 +1,5 @@
-# Welcome to MkDocs Frinze Template
-This is my template that I have created while I was working for a cool workplaces namely [Lotterywest](https://www.lotterywest.wa.gov.au/) and [UWA System Health Lab](http://systemhealthlab.com/). This is a template that contains extensions that are very nice to have when you just want a standard documentation for anything!
+# Welcome to System Health Lab MkDocs Tutorial and Template
+This is a tutorial and template based from [Mkdocs Frinze Template](https://github.com/frinzekt/mkdocs-frinze-template). This is a template that contains extensions that are very nice to have when you just want a standard documentation for anything!
 
 For full documentation visit:
 
@@ -9,16 +9,13 @@ For full documentation visit:
 
 ## How easy is this to deploy?
 
-1. Fork / Clone This [Repo](https://github.com/frinzekt/mkdocs-frinze-template/tree/main)
+1.  Clone This [Repo](https://github.com/uwasystemhealth/shl-mkdocs-tutorial-and-template) or press the big green button "Use this template"
    1. Follow the [installation](#installation)
 2. Delete the markdown files here and replace it with your own
-3. Maybe put your own Nav in the `mkdocs.yml` file
-4. Deploy somewhere ! (easist way Github Pages see [here](#commands))
+3. Change a couple of things in the `mkdocs.yml` file (there are comments around it to make it easier)
+4. Modify the `nav` in the `mkdocs.yml` file or delete it (Mkdocs will sort you documentation files to display)
+5. Deploy somewhere ! (easist way Github Pages see [here](#commands))
    
-## What inspired me to do this?
-I have seen that a lot of the documentation is really scattered for Mkdocs. Like the documentation is good and there are a lot of them, but all I really wanted was a generic template with most of the extensions that I will need without being caught up on which one to pick, and so on; so, I ended up creating this which aims to give you a very easy way to start your documentation. In addition, there was some hussle sometimes, in trying to figure out why some extensions aren't working, and it is just frustrating and time-consuming.
-
-Just erase those markdown files in the `/docs` file, and you can get started.
 
 ## Installation
 Install this preferably in your global environment because this is just a code generator and so.
@@ -43,6 +40,6 @@ pip install -r requirements.txt
 
 ## Extending this template
 
-I made this template to be simple such that it gives you a brief overview of how you would be writing your documentation with a few configuration. This is the type of documentation that you just build on top of.
+This template is made to be simple such that it gives you a brief overview of how you would be writing your documentation with a few configuration. This is the type of documentation that you just build on top of.
 
 If in the scenario that you feel that I missed that is essential to be in the template, please feel free to give this repository a pull request. However, if you feel that you would like to extend this template much more, I would highly recommend to visit the original [Mkdocs Material Documentation](https://squidfunk.github.io/mkdocs-material/customization/).

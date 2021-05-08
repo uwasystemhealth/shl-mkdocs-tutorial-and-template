@@ -2,7 +2,7 @@
 This is a configuration which allows your documentation from github to auto-deploy to the github pages.
 
 ???+ example "Why do I need this?"
-    Let me give you an example, for this documentation it is hosted at https://frinzekt.github.io/mkdocs-frinze-template/ . If this thing is configured, then whenever you modify the github repository, it automatically redeploys in github pages.
+    Let me give you an example, for this documentation it is hosted at https://uwasystemhealth.github.io/shl-mkdocs-tutorial-and-template/. If this thing is configured, then whenever you modify the github repository, it automatically redeploys in github pages.
 
 ## How do I do this?
 
