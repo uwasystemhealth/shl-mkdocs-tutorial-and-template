@@ -37,8 +37,10 @@ This tutorial and template has 2 main purpose:
 3. Change a couple of things in the `mkdocs.yml` file (there are comments around it to make it easier)
 4. Modify the `nav` in the `mkdocs.yml` file or delete it (Mkdocs will sort you documentation files to display)
 5. Deploy somewhere ! (easiest way is with Github Pages see [here](#commands))
-   
 
+
+??? note "Branch Name"
+    When you press "Use This template", the new repository will have "template" in its name. Change that in the Github >> Settings >> Branches >> Default Branch >> "Click the pencil icon".
 ## Installation
 Install this preferably in your global environment because this is just a code generator and so.
 ```
