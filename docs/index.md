@@ -39,8 +39,12 @@ This tutorial and template has 2 main purpose:
 5. Deploy somewhere ! (easiest way is with Github Pages see [here](#commands))
 
 
-??? note "Branch Name"
+???+ note "Branch Name"
     When you press "Use This template", the new repository will have "template" in its name. Change that in the Github >> Settings >> Branches >> Default Branch >> "Click the pencil icon".
+
+???+ info "Private Repositories Github Pages"
+    When you create a private repository, by default, your website will be flagged as "ready to be published". To publish the website, you have to go to Github >> Settings >> Pages >> "Change the Source Branch to `gh-pages`" >> Press Save
+
 ## Installation
 Install this preferably in your global environment because this is just a code generator and so.
 ```
