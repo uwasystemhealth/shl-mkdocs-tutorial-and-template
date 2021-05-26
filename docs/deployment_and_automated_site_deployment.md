@@ -14,16 +14,6 @@ Just follow the prompt, and it will automatically deploy your website in github 
 1. Generation of website files
 2. Deployment with Github Pages
 
-### Custom Domain Name
-
-In the scenario that you like a custom domain name such as https://www.tutorial-mkdocs.systemhealthlab.com , follow this [documentation](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages).
-
-tldr (too long didn't read) instructions:
-1. Go to the domain registar, in my case Cloudflare
-2. Register a "CNAME" of the domain/subdomain going towards `<organisation/githubname>.github.io` (eg. `uwasystemhealth.github.io`)
-3. Add a `CNAME` file with the name of the domain/subdomain in the `/docs` folder
-4. Give the `CNAME` file a content of the subdomain name (eg. `tutorial-mkdocs.systemhealthlab.com`)
-
 ### Automatic Site Deployment with Github Action
 This is a configuration which allows your documentation from github to auto-deploy to the github pages. You might not want to run `mkdocs gh-deploy` everytime you have new changes.
 
@@ -111,6 +101,17 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./site
 ```
+### Custom Domain Name
+
+In the scenario that you like a custom domain name such as https://www.tutorial-mkdocs.systemhealthlab.com , follow this [documentation](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages).
+
+Simplified instructions:
+
+1. Go to the domain registar, in my case Cloudflare
+2. Register a "CNAME" of the domain/subdomain going towards `<organisation/githubname>.github.io` (eg. `uwasystemhealth.github.io`)
+3. Add a `CNAME` file with the name of the domain/subdomain in the `/docs` folder
+4. Give the `CNAME` file a content of the subdomain name (eg. `tutorial-mkdocs.systemhealthlab.com`)
+
 
 ## Custom Site Deployment
 

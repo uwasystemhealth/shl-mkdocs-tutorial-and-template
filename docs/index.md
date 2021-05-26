@@ -7,10 +7,26 @@ For full documentation visit:
 - [PyMdown Extensions](https://facelessuser.github.io/pymdown-extensions/) for the different extensions that are installed
 - [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) for the customisation of the web server documentation.
 
+## Why documentation?
+Part of the success of every project is its maintainability, and that means that ability to pass on the knowledge and technical details to the people that will carry on the work.
+
+## What is Markdown and what is Mkdocs?
+Markdown is a simplistic markup language that is used to write documentations with a file that ends with `.md`. The greatest thing about markdown is its simplicity, this allows it to be rendered in many formats - `.docx`, `.pdf`, `.tex`, and with the case of Mkdocs, to render websites. Mkdocs is simply a renderer for markdown that generates files essential for websites (HTML, CSS, JS). These files allows the possiblity of deploying markdown documents into your own websites (in servers or external providers such as github pages).
+
+There are a lot of places to learn how to write markdown, and due to its simplistic design, it is relatively easy to learn. Below the summary of a [guide](https://guides.github.com/features/mastering-markdown/#syntax) made by Github.
+
+???+ note "Alternative"
+    There are a lot of alternatives with MkDocs in the realms of markdown-based documentation such as [gitbook](https://www.gitbook.com/), [confluence](https://www.atlassian.com/software/confluence), [github wiki](https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis), and [docusaurus](https://docusaurus.io/).
+
+    In the side of other ways for documentation:
+
+        - Onenote
+        - Word Documents in OneDrive/Google Drive
+
 ## What do I hope to achieve with this tutorial and template?
 This tutorial and template has 2 main purpose:
 
-1. Make the documentation setup easier and accesible for everyone (template)
+1. Make the documentation setup easier and accessible for everyone (template)
 2. Teach Markdown (tutorial)
 
 ## How easy is this to deploy?
@@ -20,7 +36,7 @@ This tutorial and template has 2 main purpose:
 2. Delete the markdown files here and replace it with your own
 3. Change a couple of things in the `mkdocs.yml` file (there are comments around it to make it easier)
 4. Modify the `nav` in the `mkdocs.yml` file or delete it (Mkdocs will sort you documentation files to display)
-5. Deploy somewhere ! (easist way Github Pages see [here](#commands))
+5. Deploy somewhere ! (easiest way is with Github Pages see [here](#commands))
    
 
 ## Installation
@@ -28,6 +44,9 @@ Install this preferably in your global environment because this is just a code g
 ```
 pip install -r requirements.txt
 ```
+
+???+ note "Prerequisite"
+    You need to make sure that you have Python installed to be able to use `pip`. Here is the download [link](https://www.python.org/downloads/).
 ## Commands
 
 * `mkdocs new [dir-name]` - Create a new project.
