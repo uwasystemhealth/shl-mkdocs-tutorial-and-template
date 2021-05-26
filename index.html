@@ -6,7 +6,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="images/shl.png" rel="icon"/>
-<meta content="mkdocs-1.1.2, mkdocs-material-7.1.4" name="generator"/>
+<meta content="mkdocs-1.1.2, mkdocs-material-7.1.5" name="generator"/>
 <title>System Health Lab Mkdocs Tutorial and Template</title>
 <link href="assets/stylesheets/main.bde7dde4.min.css" rel="stylesheet"/>
 <link href="assets/stylesheets/palette.ef6f36e2.min.css" rel="stylesheet"/>
@@ -141,6 +141,16 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
+<a class="md-nav__link" href="#why-documentation">
+    Why documentation?
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-is-markdown-and-what-is-mkdocs">
+    What is Markdown and what is Mkdocs?
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#what-do-i-hope-to-achieve-with-this-tutorial-and-template">
     What do I hope to achieve with this tutorial and template?
   </a>
@@ -208,6 +218,16 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
+<a class="md-nav__link" href="#why-documentation">
+    Why documentation?
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-is-markdown-and-what-is-mkdocs">
+    What is Markdown and what is Mkdocs?
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#what-do-i-hope-to-achieve-with-this-tutorial-and-template">
     What do I hope to achieve with this tutorial and template?
   </a>
@@ -260,10 +280,23 @@
 <li><a href="https://facelessuser.github.io/pymdown-extensions/">PyMdown Extensions</a> for the different extensions that are installed</li>
 <li><a href="https://squidfunk.github.io/mkdocs-material/">MkDocs Material</a> for the customisation of the web server documentation.</li>
 </ul>
+<h2 id="why-documentation">Why documentation?<a class="headerlink" href="#why-documentation" title="Permanent link">¶</a></h2>
+<p>Part of the success of every project is its maintainability, and that means that ability to pass on the knowledge and technical details to the people that will carry on the work.</p>
+<h2 id="what-is-markdown-and-what-is-mkdocs">What is Markdown and what is Mkdocs?<a class="headerlink" href="#what-is-markdown-and-what-is-mkdocs" title="Permanent link">¶</a></h2>
+<p>Markdown is a simplistic markup language that is used to write documentations with a file that ends with <code>.md</code>. The greatest thing about markdown is its simplicity, this allows it to be rendered in many formats - <code>.docx</code>, <code>.pdf</code>, <code>.tex</code>, and with the case of Mkdocs, to render websites. Mkdocs is simply a renderer for markdown that generates files essential for websites (HTML, CSS, JS). These files allows the possiblity of deploying markdown documents into your own websites (in servers or external providers such as github pages).</p>
+<p>There are a lot of places to learn how to write markdown, and due to its simplistic design, it is relatively easy to learn. Below the summary of a <a href="https://guides.github.com/features/mastering-markdown/#syntax">guide</a> made by Github.</p>
+<details class="note" open="open"><summary>Alternative</summary><p>There are a lot of alternatives with MkDocs in the realms of markdown-based documentation such as <a href="https://www.gitbook.com/">gitbook</a>, <a href="https://www.atlassian.com/software/confluence">confluence</a>, <a href="https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis">github wiki</a>, and <a href="https://docusaurus.io/">docusaurus</a>.</p>
+<p>In the side of other ways for documentation:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>- Onenote
+- Word Documents in OneDrive/Google Drive
+</code></pre></div>
+</td></tr></table>
+</details>
 <h2 id="what-do-i-hope-to-achieve-with-this-tutorial-and-template">What do I hope to achieve with this tutorial and template?<a class="headerlink" href="#what-do-i-hope-to-achieve-with-this-tutorial-and-template" title="Permanent link">¶</a></h2>
 <p>This tutorial and template has 2 main purpose:</p>
 <ol>
-<li>Make the documentation setup easier and accesible for everyone (template)</li>
+<li>Make the documentation setup easier and accessible for everyone (template)</li>
 <li>Teach Markdown (tutorial)</li>
 </ol>
 <h2 id="how-easy-is-this-to-deploy">How easy is this to deploy?<a class="headerlink" href="#how-easy-is-this-to-deploy" title="Permanent link">¶</a></h2>
@@ -273,13 +306,15 @@
 <li>Delete the markdown files here and replace it with your own</li>
 <li>Change a couple of things in the <code>mkdocs.yml</code> file (there are comments around it to make it easier)</li>
 <li>Modify the <code>nav</code> in the <code>mkdocs.yml</code> file or delete it (Mkdocs will sort you documentation files to display)</li>
-<li>Deploy somewhere ! (easist way Github Pages see <a href="#commands">here</a>)</li>
+<li>Deploy somewhere ! (easiest way is with Github Pages see <a href="#commands">here</a>)</li>
 </ol>
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">¶</a></h2>
 <p>Install this preferably in your global environment because this is just a code generator and so.
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>pip install -r requirements.txt
 </code></pre></div>
 </td></tr></table></p>
+<details class="note" open="open"><summary>Prerequisite</summary><p>You need to make sure that you have Python installed to be able to use <code>pip</code>. Here is the download <a href="https://www.python.org/downloads/">link</a>.</p>
+</details>
 <h2 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link">¶</a></h2>
 <ul>
 <li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
@@ -371,8 +406,8 @@
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "assets/javascripts/workers/search.4fa0e4ee.min.js", "version": null}</script>
-<script src="assets/javascripts/bundle.1d3bfcf1.min.js"></script>
+<script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "assets/javascripts/workers/search.d351de03.min.js", "version": null}</script>
+<script src="assets/javascripts/bundle.a1609d9a.min.js"></script>
 <script src="https://unpkg.com/mermaid@8.8.2/dist/mermaid.min.js"></script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
