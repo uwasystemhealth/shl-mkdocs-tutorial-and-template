@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="images/shl.png" rel="icon"/>
 <meta content="mkdocs-1.2.1, mkdocs-material-7.1.10" name="generator"/>
-<title>Deployment and Automated Site Deployment - System Health Lab Mkdocs Tutorial and Template</title>
+<title>Contributions - System Health Lab Mkdocs Tutorial and Template</title>
 <link href="assets/stylesheets/main.1fe995fd.min.css" rel="stylesheet"/>
 <link href="assets/stylesheets/palette.f1a3b89f.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -21,7 +21,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#site-deployment">
+<a class="md-skip" href="#contributions">
           Skip to content
         </a>
 </div>
@@ -45,7 +45,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Deployment and Automated Site Deployment
+              Contributions
             
           </span>
 </div>
@@ -140,14 +140,19 @@
         Flavoured Markdown
       </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="deployment_and_automated_site_deployment.html">
+        Deployment and Automated Site Deployment
+      </a>
+</li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
 <label class="md-nav__link md-nav__link--active" for="__toc">
-          Deployment and Automated Site Deployment
+          Contributions
           <span class="md-nav__icon md-icon"></span>
 </label>
-<a class="md-nav__link md-nav__link--active" href="deployment_and_automated_site_deployment.html">
-        Deployment and Automated Site Deployment
+<a class="md-nav__link md-nav__link--active" href="contributions.html">
+        Contributions
       </a>
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
 <label class="md-nav__title" for="__toc">
@@ -156,45 +161,26 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#site-deployment-with-github">
-    Site Deployment with Github
+<a class="md-nav__link" href="#structure">
+    Structure
   </a>
-<nav aria-label="Site Deployment with Github" class="md-nav">
+<nav aria-label="Structure" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#automatic-site-deployment-with-github-action">
-    Automatic Site Deployment with Github Action
-  </a>
-<nav aria-label="Automatic Site Deployment with Github Action" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#how-do-i-do-this">
-    How do I do this?
+<a class="md-nav__link" href="#folder-structure">
+    Folder Structure
   </a>
 </li>
-</ul>
-</nav>
-</li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#custom-domain-name">
-    Custom Domain Name
+<a class="md-nav__link" href="#branch-structure">
+    Branch Structure
   </a>
 </li>
 </ul>
 </nav>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#custom-site-deployment">
-    Custom Site Deployment
-  </a>
-</li>
 </ul>
 </nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="contributions.html">
-        Contributions
-      </a>
 </li>
 </ul>
 </nav>
@@ -211,37 +197,23 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#site-deployment-with-github">
-    Site Deployment with Github
+<a class="md-nav__link" href="#structure">
+    Structure
   </a>
-<nav aria-label="Site Deployment with Github" class="md-nav">
+<nav aria-label="Structure" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#automatic-site-deployment-with-github-action">
-    Automatic Site Deployment with Github Action
+<a class="md-nav__link" href="#folder-structure">
+    Folder Structure
   </a>
-<nav aria-label="Automatic Site Deployment with Github Action" class="md-nav">
-<ul class="md-nav__list">
+</li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#how-do-i-do-this">
-    How do I do this?
+<a class="md-nav__link" href="#branch-structure">
+    Branch Structure
   </a>
 </li>
 </ul>
 </nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#custom-domain-name">
-    Custom Domain Name
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#custom-site-deployment">
-    Custom Site Deployment
-  </a>
 </li>
 </ul>
 </nav>
@@ -250,53 +222,14 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<a class="md-content__button md-icon" href="https://github.com/uwasystemhealth/shl-mkdocs-tutorial-and-template/edit/main/docs/deployment_and_automated_site_deployment.md" title="Edit this page">
+<a class="md-content__button md-icon" href="https://github.com/uwasystemhealth/shl-mkdocs-tutorial-and-template/edit/main/docs/contributions.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"></path></svg>
 </a>
-<h1 id="site-deployment">Site Deployment<a class="headerlink" href="#site-deployment" title="Permanent link">¶</a></h1>
-<p>As said previously, Mkdocs allows conversion of <code>.md</code> to <code>HTML</code>, <code>CSS</code>, and <code>JS</code> files in order to create and deploy websites. Below are the possible approaches.</p>
-<h2 id="site-deployment-with-github">Site Deployment with Github<a class="headerlink" href="#site-deployment-with-github" title="Permanent link">¶</a></h2>
-<p>Assuming that your repository is in github, when an Mkdocs repository is created, simply type</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>mkdocs gh-deploy
-</code></pre></div>
-</td></tr></table>
-<p>Just follow the prompt, and it will automatically deploy your website in github pages. No other complication needed, this command will handle the following steps:</p>
-<ol>
-<li>Generation of website files</li>
-<li>Deployment with Github Pages</li>
-</ol>
-<h3 id="automatic-site-deployment-with-github-action">Automatic Site Deployment with Github Action<a class="headerlink" href="#automatic-site-deployment-with-github-action" title="Permanent link">¶</a></h3>
-<p>This is a configuration which allows your documentation from github to auto-deploy to the github pages. You might not want to run <code>mkdocs gh-deploy</code> everytime you have new changes.</p>
-<details class="example" open="open"><summary>Why do I need this?</summary><p>Let me give you an example, for this documentation it is hosted at https://uwasystemhealth.github.io/shl-mkdocs-tutorial-and-template/. If this thing is configured, then whenever you modify the github repository, it automatically redeploys in github pages.</p>
-</details>
-<h4 id="how-do-i-do-this">How do I do this?<a class="headerlink" href="#how-do-i-do-this" title="Permanent link">¶</a></h4>
-<p>If you look closely in the repository, there is a file <code>.github/workflows/main.yml</code>. Copy this file over to you repository. The content of it is roughly like below. Note that you have to change 2 lines highlighted to the path of your documentation. </p>
-<details class="example"><summary>Example of Path that you will have to change</summary><p>If in the scenario that your repository is just documentation, which means that your <code>mkdocs.yml</code> file is in the root, then you don't have to change anything.</p>
-<p>However, there are cases where you have a monorepo - a type of repository that contains multiple files such as for example in a software project, there are the documentation files, and source code files. It is quite common to have a file structure that looks like this:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span>
-<span class="normal">8</span>
-<span class="normal">9</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>frontend/
-    ...
-backend/
-    ...
-mkdocs/
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
-</code></pre></div>
-</td></tr></table>
-<p>This means that you will have to change the one highlighted. From the example above here, the correct lines changes are:</p>
-<p><code>key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}</code> to <code>key: ${{ runner.os }}-pip-${{ hashFiles('**/mkdocs/requirements.txt') }}</code></p>
-<p>and </p>
-<p><code>python3 -m pip install -r ./requirements.txt</code> to <code>python3 -m pip install -r ./mkdocs/requirements.txt</code></p>
-</details>
+<h1 id="contributions">Contributions<a class="headerlink" href="#contributions" title="Permanent link">¶</a></h1>
+<p>Hi! I am happy that you thought of contributing! If you have any suggestions or issues, please raise it <a href="https://github.com/uwasystemhealth/shl-mkdocs-tutorial-and-template/issues">here</a>. I would be happy if you could provide pull requests, if you know how to do it <a href="https://github.com/uwasystemhealth/shl-mkdocs-tutorial-and-template/pulls">here</a>. Also add your name in the contributors section.</p>
+<h2 id="structure">Structure<a class="headerlink" href="#structure" title="Permanent link">¶</a></h2>
+<h3 id="folder-structure">Folder Structure<a class="headerlink" href="#folder-structure" title="Permanent link">¶</a></h3>
+<p>The structure of this repo is as follows:</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -313,113 +246,42 @@ mkdocs/
 <span class="normal">14</span>
 <span class="normal">15</span>
 <span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span>
-<span class="normal">23</span>
-<span class="normal">24</span>
-<span class="normal">25</span>
-<span class="normal">26</span>
-<span class="normal">27</span>
-<span class="normal">28</span>
-<span class="normal">29</span>
-<span class="normal">30</span>
-<span class="normal">31</span>
-<span class="normal">32</span>
-<span class="normal">33</span>
-<span class="normal">34</span>
-<span class="normal">35</span>
-<span class="normal">36</span>
-<span class="normal">37</span>
-<span class="normal">38</span>
-<span class="normal">39</span>
-<span class="normal">40</span>
-<span class="normal">41</span>
-<span class="normal">42</span>
-<span class="normal">43</span>
-<span class="normal">44</span>
-<span class="normal">45</span>
-<span class="normal">46</span>
-<span class="normal">47</span>
-<span class="normal">48</span>
-<span class="normal">49</span>
-<span class="normal">50</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code># Workflow for deploying to github
-name: Publish docs via GitHub Pages
-on:
-  push:
-    branches:
-      - master
-      - main
-      - mkdocs-experimental
-  workflow_dispatch:
-
-jobs:
-  deploy:
-    name: Deploy docs
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout main
-        uses: actions/checkout@v2
-
-      - name: Setup Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.8'
-
-      - name: Upgrade pip
-        run: |
-          # install pip=&gt;20.1 to use "pip cache dir"
-          python3 -m pip install --upgrade pip
-      - name: Get pip cache dir
-        id: pip-cache
-        run: echo "::set-output name=dir::$(pip cache dir)"
-
-      - name: Cache dependencies
-        uses: actions/cache@v2
-        with:
-          path: ${{ steps.pip-cache.outputs.dir }}
-<span class="hll">          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-</span>          restore-keys: |
-            ${{ runner.os }}-pip-
-      - name: Install dependencies
-<span class="hll">        run: python3 -m pip install -r ./requirements.txt
-</span>
-      - run: mkdocs build
-        env: 
-          ENABLE_PDF_EXPORT: 1
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site
+<span class="normal">17</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>├── docs                    // Folders for documentation
+│   ├── CNAME
+│   ├── contributions.md
+│   ├── deployment_and_automated_site_deployment.md
+│   ├── flavoured_markdown.md
+│   ├── images              // Assets
+│   │   ├── shl.png
+│   │   └── shl_with_text.png
+│   ├── index.md
+│   └── writing_markdown.md
+├── LICENSE
+├── mkdocs.yml              // MkDocs Configuration
+├── overrides
+│   └── partials
+│       └── footer.html
+├── README.md
+└── requirements.txt
 </code></pre></div>
 </td></tr></table>
-<h3 id="custom-domain-name">Custom Domain Name<a class="headerlink" href="#custom-domain-name" title="Permanent link">¶</a></h3>
-<p>In the scenario that you like a custom domain name such as https://www.tutorial-mkdocs.systemhealthlab.com , follow this <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages">documentation</a>.</p>
-<p>Simplified instructions:</p>
-<ol>
-<li>Go to the domain registar, in my case Cloudflare</li>
-<li>Register a "CNAME" of the domain/subdomain going towards <code>&lt;organisation/githubname&gt;.github.io</code> (eg. <code>uwasystemhealth.github.io</code>)</li>
-<li>Add a <code>CNAME</code> file with the name of the domain/subdomain in the <code>/docs</code> folder</li>
-<li>Give the <code>CNAME</code> file a content of the subdomain name (eg. <code>tutorial-mkdocs.systemhealthlab.com</code>)</li>
-</ol>
-<h2 id="custom-site-deployment">Custom Site Deployment<a class="headerlink" href="#custom-site-deployment" title="Permanent link">¶</a></h2>
-<p>Let say you don't want to deploy it in github pages. You would like to deploy it elsewhere such as your own server or a VPS. Be aware that this portion is a little bit technical, and may not even be what you do in a regular basis or not necessary if you already deployed it with Github Pages. You have to type this command</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>mkdocs build
-</code></pre></div>
-</td></tr></table>
-<p>This will create the <code>/site</code> folder which contains your website files. Now you would have to setup a server application that serves static files such as <code>NGINX</code> or <code>Apache</code> server app. After setting this up, copy the contents of the <code>/site</code> folder into the static file folder.</p>
+<h3 id="branch-structure">Branch Structure<a class="headerlink" href="#branch-structure" title="Permanent link">¶</a></h3>
+<p>You might have noticed that there are a couple of branches that are important:</p>
+<ul>
+<li><code>gh-pages</code> is the branch that contains the GitHub Pages build as per requirement of a website hosted in Github Pages</li>
+<li><code>main</code> is the branch that contains the <code>main</code> branch for any development and contribution</li>
+<li><code>template</code> is the branch that is in the front page of the Github Repo. This is the branch where all repositories will inherit the template.</li>
+</ul>
+<details class="info" open="open"><summary>Why have <code>template</code> and <code>main</code> separate?</summary><p>One of the things that you could see in <code>main</code> is the file called <code>CNAME</code> this is configuration for the domain name. Templates that inherit the files should not have this, otherwise there would be conflict in the organisation deployment for domain name.</p>
+<p>Furthermore, by separating this, the changes could be version batched before releasing it in <code>template</code>.</p>
+</details>
 </article>
 </div>
 </div>
 </main>
 <footer class="md-footer">
 <nav aria-label="Footer" class="md-footer__inner md-grid">
-<a class="md-footer__link md-footer__link--prev" href="flavoured_markdown.html" rel="prev">
+<a class="md-footer__link md-footer__link--prev" href="deployment_and_automated_site_deployment.html" rel="prev">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
 </div>
@@ -428,21 +290,8 @@ jobs:
 <span class="md-footer__direction">
                   Previous
                 </span>
-                Flavoured Markdown
+                Deployment and Automated Site Deployment
               </div>
-</div>
-</a>
-<a class="md-footer__link md-footer__link--next" href="contributions.html" rel="next">
-<div class="md-footer__title">
-<div class="md-ellipsis">
-<span class="md-footer__direction">
-                  Next
-                </span>
-                Contributions
-              </div>
-</div>
-<div class="md-footer__button md-icon">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"></path></svg>
 </div>
 </a>
 </nav>
