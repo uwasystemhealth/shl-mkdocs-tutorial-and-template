@@ -7,6 +7,12 @@ For full documentation visit:
 - [PyMdown Extensions](https://facelessuser.github.io/pymdown-extensions/) for the different extensions that are installed
 - [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) for the customisation of the web server documentation.
 
+## Examples of Other Documentations that uses this template
+
+- [IndEAA (Industrial Engineers Australia Assessment) Web Application](https://indeaa-docs.systemhealthlab.com/) used for streamlining course accreditation review
+- [ASER (Asset Equipment Registry) Web Application](https://aser-docs.systemhealthlab.com/) used for accessible equipment registry 
+- [Living Lab UWA Documentation](https://docs.livinglabproject.com/) used for technical documentation on accelerated life testing
+
 ## Why documentation?
 Part of the success of every project is its maintainability, and that means that ability to pass on the knowledge and technical details to the people that will carry on the work.
 
@@ -92,7 +98,14 @@ pip install -r requirements.txt
 
 This template is made to be simple such that it gives you a brief overview of how you would be writing your documentation with a few configuration. This is the type of documentation that you just build on top of.
 
-If in the scenario that you feel that I missed that is essential to be in the template, please feel free to give this repository a pull request. However, if you feel that you would like to extend this template much more, I would highly recommend to visit the original [Mkdocs Material Documentation](https://squidfunk.github.io/mkdocs-material/customization/).
+If in the scenario that you feel that I missed that is essential to be in the template, please see [Contributions Section](contributions.md). However, if you feel that you would like to extend this template much more, I would highly recommend to visit the original [Mkdocs Material Documentation](https://squidfunk.github.io/mkdocs-material/customization/).
+
+### Contributors
+All thanks to the following contributors for maintaining this:
+
+- [Frinze Lapuz](https://frinzelapuz.vercel.app/)
+- [Ben Travaglione](https://travaglione.com/)
+- [Melinda Hodkiewicz](https://systemhealthlab.com/about/current-members/)
 
 
 ## About this tutorial
