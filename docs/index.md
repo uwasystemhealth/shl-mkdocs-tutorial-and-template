@@ -53,23 +53,24 @@ This tutorial and template has 2 main purpose:
     You can use a package distributor like [Anaconda](https://www.anaconda.com/products/individual)
     Or you can just install [Python](https://www.python.org/downloads/).
 
-Once you have installed Python, it is probably harmless to install mkdocs in your global/base environment by opening a terminal and typing:
+
+Once you have installed Python, install mkdocs requirements by opening a terminal and typing:
 
 ```bash
 pip install -r requirements.txt
 ```
+??? info "Python Environments (Optional)"
+    however, it is good practice to use different environments for different purposes, in which case, for Anaconda, you would open a terminal and type:
 
-however, it is good practice to use different environments for different purposes, in which case, for Anaconda, you would open a terminal and type:
+    ```bash
+    conda create -n mkdocstutorial python
+    conda activate mkdocstutorial
+    ```
+    then enter:
 
-```bash
-conda create -n mkdocstutorial python
-conda activate mkdocstutorial
-```
-then enter:
-
-```bash
-pip install -r requirements.txt
-```
+    ```bash
+    pip install -r requirements.txt
+    ```
 
 ## Commands
 
