@@ -46,13 +46,32 @@ This tutorial and template has 2 main purpose:
     When you create a private repository, by default, your website will be flagged as "ready to be published". To publish the website, you have to go to Github >> Settings >> Pages >> "Change the Source Branch to `gh-pages`" >> Press Save
 
 ## Installation
-Install this preferably in your global environment because this is just a code generator and so.
-```
-pip install -r requirements.txt
-```
 
 ???+ note "Prerequisite"
-    You need to make sure that you have Python installed to be able to use `pip`. Here is the download [link](https://www.python.org/downloads/).
+    You need to have Python installed to be able to use `pip`.
+    There are a few ways of installing Python.
+    You can use a package distributor like [Anaconda](https://www.anaconda.com/products/individual)
+    Or you can just install [Python](https://www.python.org/downloads/).
+
+
+Once you have installed Python, install mkdocs requirements by opening a terminal and typing:
+
+```bash
+pip install -r requirements.txt
+```
+??? info "Python Environments (Optional)"
+    however, it is good practice to use different environments for different purposes, in which case, for Anaconda, you would open a terminal and type:
+
+    ```bash
+    conda create -n mkdocstutorial python
+    conda activate mkdocstutorial
+    ```
+    then enter:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
 ## Commands
 
 * `mkdocs new [dir-name]` - Create a new project.
